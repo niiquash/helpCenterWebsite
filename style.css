@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+figure {
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  overflow: hidden;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo-and-link {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo-link,
+.nav__logo-name {
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+
+.nav__logo-name {
+  font-weight: bold;
+}
+
+.nav__logo-link {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-name-link-div {
+  border: 1px solid white;
+  height: 70%;
+}
+
+.menu {
+  display: none;
+}
