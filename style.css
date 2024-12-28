@@ -8,7 +8,7 @@ body {
   font-family: sans-serif;
 }
 
-figure {
+.nav__logo figure {
   width: 30px;
   height: 30px;
   border-radius: 40%;
@@ -182,4 +182,53 @@ nav {
 .main__search-box button svg {
   width: 30px;
   height: 30px;
+}
+
+/* MAIN BODY */
+.main__items-wrapper {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.main__item {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+.main__item figure {
+  margin-right: 20px;
+}
+
+.main__item img {
+  width: 70px;
+  height: 70px;
+}
+
+.main__item section {
+  flex: 1;
+}
+
+.main__item section h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.main__item section p {
+  margin: 25px 0;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.main__item section a {
+  text-decoration: none;
+  color: #4c5fd5;
+  font-size: 1.2rem;
 }
