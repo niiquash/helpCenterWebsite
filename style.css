@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+}
+
 body {
+  position: relative;
   font-family: sans-serif;
 }
 
-.nav__logo figure {
+.nav__logo figure,
+.footer__copy figure {
   width: 30px;
   height: 30px;
   border-radius: 40%;
@@ -231,4 +236,118 @@ nav {
   text-decoration: none;
   color: #4c5fd5;
   font-size: 1.2rem;
+}
+
+/* FOOTER */
+.footer__wrapper {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 1rem;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.footer__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__item {
+  flex: 1 1 calc(50% - 40px);
+  margin: 10px;
+  padding: 25px;
+}
+
+.footer__item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.footer__item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__item ul li {
+  margin-bottom: 5px;
+}
+
+.footer__item ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__item ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer__contact-item {
+  margin-top: 30px;
+}
+
+.footer__contact-item h4 {
+  margin-bottom: 10px;
+}
+
+.footer__contact-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__contact-item a:hover {
+  text-decoration: underline;
+}
+
+.footer__copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 35px;
+}
+
+.footer__copy figure {
+  margin-bottom: 20px;
+}
+
+.footer__copy-text {
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+/* HELP/LIVE CHAT BUTTON */
+.side-help-panel {
+  width: 100px;
+  border: none;
+  background: #4c5fd5;
+  color: #fff;
+  border-radius: 24px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.help-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.help-btn svg {
+  fill: #fff;
+  width: 18px;
+  height: 18px;
+  stroke: #fff;
+  stroke-width: 1.5;
 }
